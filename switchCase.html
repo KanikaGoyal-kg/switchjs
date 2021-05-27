@@ -1,0 +1,96 @@
+<html>
+    <head>
+            <h1>Enter your choices</h1>
+    </head>
+    <body>
+        <form>
+        <ul>
+            <li>Add</li>
+            <li>Sub</li>
+            <li>Mliti</li>
+        <ul>
+        <br>
+        <input type="text" id="choices" />
+        <button type="submit" onclick="myFunc()">Click me</button>
+        <p id="demo"></p>
+    </form>
+    <script>
+        function myFunc() {
+            var choice = document.getElementById("choices").value;
+            console.log(choice)
+
+            // alert(choice);
+            switch (choice) {
+                case "add" : var a = 10;
+                            var b = 20;
+                            var c = a + b;
+                            document.write("addiition of two number is " + c);
+                            break;
+
+            case "sub" : var a = 10;
+                        var b = 20;
+                        var c = a - b;
+                        document.write("subtraction of two number is " + c);
+                        break;
+
+            case "multi" : var a = 10;
+                        var b = 20;
+                        var c = a * b;
+                        document.write("multiplication of two number is " + c);
+                        break;
+                        
+            default: alert("Input is not valid")
+            }
+        }
+        
+      
+    </script>
+    <!-- Practise of while loop -->
+    <h5>While loop</h5>
+    <script>
+          var i = 1;
+        while (i <= 5) {
+            document.write(i);
+            i++;
+            document.write("<br>");
+        }
+    </script>
+    <!-- Printing table of 2 -->
+    <h1>Table of 2</h1>
+    <script>
+        var i = 2;
+        var j = 1;
+        while (i<=20) {
+            document.write("2" + "*" + j + "=" + i);
+            j++;
+            i +=2;
+            document.write("<br>");
+
+        }
+    </script>
+    </br>
+    <!-- Functions in js -->
+    <script>
+        sum(10,20);
+        sum(20,20);
+        sum(30,20);
+
+        function sum(a,b) {
+            var add = a + b;
+            document.write(add);
+            document.write("<br>");
+
+        }
+    </script>
+    </br>
+    <!-- Using return statement -->
+    <script>
+        var stored = sum (10, 20);
+        document.write(stored);
+        function sum (a,b) {
+            add = a + b;
+            return add;
+        }
+    </script>
+    </body>
+</html>
